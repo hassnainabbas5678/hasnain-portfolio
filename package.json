@@ -8,9 +8,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite",
-    "preview": "vite preview",
-    "netlify:build": "npm run build"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

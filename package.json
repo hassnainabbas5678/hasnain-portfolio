@@ -3,10 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "netlify:build": "npm run build"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

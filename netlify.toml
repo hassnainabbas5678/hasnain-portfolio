@@ -1,6 +1,10 @@
 [build]
-  command = "npm run build"
+  command = "npm run netlify:build"
   publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20.19.0"
+  NPM_FLAGS = "--include=dev"
 
 [functions]
   directory = "netlify/functions"
@@ -9,6 +13,7 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+  force = true
 
 [[headers]]
   for = "/*"

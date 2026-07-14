@@ -5,6 +5,7 @@
 [build.environment]
   NODE_VERSION = "20.19.0"
   NPM_FLAGS = "--include=dev"
+  VITE_CONTACT_ENDPOINT = "/api/contact"
 
 [functions]
   directory = "netlify/functions"

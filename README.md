@@ -18,7 +18,7 @@ npm run build
 npm run preview
 ```
 
-The app is configured for Netlify: build command `npm run netlify:build`, publish directory `dist`, and Node `20.19.0`. SPA redirects are in `public/_redirects`; `/api/contact` is routed to the Netlify function in `netlify.toml`.
+The app is configured for Netlify: build command `npm run build`, publish directory `dist`, and Node `20.19.0`. SPA redirects are in `public/_redirects`; `/api/contact` is routed to the Netlify function in `netlify.toml`.
 
 ## Contact form (Resend)
 

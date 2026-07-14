@@ -1,0 +1,24 @@
+{
+  "name": "hasnain-abbas-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "gsap": "latest",
+    "lenis": "latest",
+    "framer-motion": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "react-icons": "latest"
+  },
+  "devDependencies": {
+    "vite": "latest"
+  }
+}

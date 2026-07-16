@@ -23,5 +23,6 @@
 @media(max-width:380px){.app-hero{padding-inline:18px!important}.app-hero .hero-top{margin-bottom:41px}.app-hero .portrait{width:58vw!important;margin-top:24px}.app-hero .round-link{height:59px}.faq{padding-inline:18px}.faq-list button{gap:10px}.faq-list button span{font-size:1.4rem}.faq-answer p{margin-left:44px}}
 
 .portrait img{object-position:40% center}
+.about-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% center}
 
 .project-art>img{width:100%;height:100%;object-fit:contain;object-position:center;transition:transform .8s cubic-bezier(.22,1,.36,1)}.portfolio-card:hover .project-art>img{transform:scale(1.05)}

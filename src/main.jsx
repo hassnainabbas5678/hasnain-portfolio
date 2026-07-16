@@ -280,7 +280,6 @@ function Shell({ children }) {
       ["/about", "About"],
       ["/projects", "Portfolio"],
       ["/services", "Services"],
-      ["/blog", "Journal"],
       ["/contact", "Contact"],
     ],
     [],
@@ -671,36 +670,48 @@ function Home() {
 function About() {
   const education = [
     {
-      degree: "Bachelor’s degree",
-      institution: "Your institution",
-      years: "2020 — 2024",
+      degree: "Bachelor of Computer Science (BSCS)",
+      institution: "FAST-NUCES, Karachi",
+      years: "Currently enrolled / 3rd semester",
       description:
-        "Add your degree focus, achievements, or work that shaped your approach here.",
+        "Building a strong foundation in computer science alongside practical development work.",
     },
     {
-      degree: "Professional development",
-      institution: "Your programme or certification",
-      years: "2024 — Present",
+      degree: "Advanced Diploma in Software Engineering (ADSE)",
+      institution: "Aptech Computer Education",
+      years: "3-year diploma",
       description:
-        "A concise place for specialist learning, certifications, and ongoing practice.",
+        "Practical software engineering training across development fundamentals and web technologies.",
+    },
+    {
+      degree: "Higher Secondary Education (CS)",
+      institution: "Aga Khan Higher Secondary School",
+      years: "86.9%",
+      description: "Computer science academic foundation.",
+    },
+    {
+      degree: "Matriculation — Computer Science",
+      institution: "B.V.S. Parsi High School",
+      years: "84.1%",
+      description: "Computer science academic foundation.",
     },
   ];
   const experience = [
     {
       position: "Full Stack Web Developer",
-      company: "Your current company",
-      duration: "2024 — Present",
+      company: "Nestec Services",
+      duration: "Present",
       responsibilities:
-        "Build and ship responsive product experiences from interface systems through API integration.",
-      technologies: "React, Node.js, MongoDB, GSAP",
+        "Develop and maintain responsive full-stack websites and web applications, working across frontend development, styling, and custom features.",
+      technologies: "JavaScript, React, Node.js, WordPress, Shopify",
     },
     {
-      position: "Frontend Developer",
-      company: "Your previous company",
-      duration: "2022 — 2024",
+      position: "PHP Developer Intern",
+      company: "Web development internship",
+      duration: "1 month",
       responsibilities:
-        "Turn product direction into accessible, performant interfaces with careful interaction detail.",
-      technologies: "React, JavaScript, Tailwind CSS",
+        "Gained practical exposure to PHP-based web development and backend system development in a professional environment.",
+      technologies: "PHP, MySQL, HTML, CSS",
     },
   ];
   return (
@@ -721,13 +732,14 @@ function About() {
         </div>
         <div>
           <p className="big-copy">
-            I am Hasnain Abbas, a Full Stack Web Developer focused on React,
-            Node.js, and the moments where design and engineering have to agree.
+            I am Hasnain Abbas, a Full Stack Web Developer with four years of
+            continuous coding and project-building experience.
           </p>
           <p>
-            I build practical product systems for founders and teams: responsive
-            interfaces, sensible architecture, and the details that make the
-            work easy to trust.
+            I specialize in MERN stack development and modern responsive
+            interfaces, with experience in WordPress, Shopify, JavaScript, and
+            smooth animation-led web experiences. I combine practical
+            full-stack functionality with polished frontend execution.
           </p>
           <Link className="text-link" to="/contact">
             Work with me <FiArrowUpRight />
@@ -1298,12 +1310,9 @@ function Footer() {
           </div>
           <div>
             <p className="footer-label">Connect</p>
-            <a href="mailto:hello@hasnainabbas.dev">Email</a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href="mailto:hassnainlilani@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/hasnain---abbas/" target="_blank" rel="noreferrer">
               LinkedIn
-            </a>
-            <a href="https://github.com" target="_blank" rel="noreferrer">
-              GitHub
             </a>
           </div>
           <div>
@@ -1370,8 +1379,6 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/case-studies/:slug" element={<CaseStudy />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<Article />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Legal />} />
           <Route path="/terms" element={<Legal terms />} />

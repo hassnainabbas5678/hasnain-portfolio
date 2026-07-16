@@ -26,3 +26,5 @@
 .about-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% center}
 
 .project-art>img{width:100%;height:100%;object-fit:contain;object-position:center;transition:transform .8s cubic-bezier(.22,1,.36,1)}.portfolio-card:hover .project-art>img{transform:scale(1.05)}
+
+.logo-line{display:block;overflow:hidden;padding:0}.tech-slider,.tech-slider-copy{display:flex;align-items:center;flex:none;width:max-content}.tech-slider{animation:technology-scroll 38s linear infinite}.tech-slider span,.tech-slider-copy span{display:flex;align-items:center;justify-content:center;min-width:clamp(140px,14vw,230px);height:64px;padding:0 28px;white-space:nowrap}.tech-slider span:after,.tech-slider-copy span:after{content:"✦";margin-left:28px;color:var(--accent);font-size:10px}@keyframes technology-scroll{to{transform:translateX(-50%)}}.logo-line:hover .tech-slider{animation-play-state:paused}@media(prefers-reduced-motion:reduce){.tech-slider{animation:none}}

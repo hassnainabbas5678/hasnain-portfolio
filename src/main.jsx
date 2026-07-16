@@ -532,7 +532,6 @@ function Home() {
       <section className="hero app-hero">
         <div className="hero-top">
           <span>Portfolio / 2026</span>
-          <span>Pakistan - working globally</span>
         </div>
         <div className="hero-title">
           <h1>
@@ -561,11 +560,46 @@ function Home() {
         </div>
       </section>
       <div className="logo-line">
-        <span>REACT</span>
-        <span>NODE.JS</span>
-        <span>MONGODB</span>
-        <span>TAILWIND</span>
-        <span>VERCEL</span>
+        <div className="tech-slider">
+          {[
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "PHP",
+            "MySQL",
+            "HTML5",
+            "CSS3",
+            "WordPress",
+            "Shopify",
+            "GSAP",
+            "Framer Motion",
+            "REST APIs",
+          ].map((technology) => (
+            <span key={technology}>{technology}</span>
+          ))}
+          <div className="tech-slider-copy" aria-hidden="true">
+            {[
+              "JavaScript",
+              "React",
+              "Node.js",
+              "Express",
+              "MongoDB",
+              "PHP",
+              "MySQL",
+              "HTML5",
+              "CSS3",
+              "WordPress",
+              "Shopify",
+              "GSAP",
+              "Framer Motion",
+              "REST APIs",
+            ].map((technology) => (
+              <span key={technology}>{technology}</span>
+            ))}
+          </div>
+        </div>
       </div>
       <section className="manifesto">
         <p className="eyebrow">01 / How I work</p>
@@ -629,7 +663,7 @@ function Home() {
         </div>
       </section>
       <section className="process">
-        <p className="eyebrow">04 / Delivery</p>
+        <p className="eyebrow">03 / Delivery</p>
         {["Discover", "Structure", "Design", "Build", "Refine", "Launch"].map(
           (x, i) => (
             <div className="process-row" key={x}>
